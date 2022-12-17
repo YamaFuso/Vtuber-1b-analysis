@@ -1,0 +1,53 @@
+<mxfile host="65bd71144e">
+    <diagram id="ckF_yRP-cOF9sP-n1kTB" name="Page-1">
+        <mxGraphModel dx="1642" dy="695" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="4" value="parquet files" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" parent="1" vertex="1">
+                    <mxGeometry x="300" y="15" width="110" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="hdfs commands" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="20" edge="1" source="4">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="460" y="89.5" as="sourcePoint"/>
+                        <mxPoint x="320" y="130" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="13" value="MongoDB" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="120" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="" style="endArrow=classic;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.875;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="20" target="13" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="568.6999999999998" y="115.64999999999998" as="sourcePoint"/>
+                        <mxPoint x="600" y="205" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="15" value="mongodb.py" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="14" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="HDFS" style="shape=internalStorage;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+                    <mxGeometry x="315" y="120" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="Spark MLlib" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rotation=0;horizontal=1;verticalAlign=middle;textDirection=rtl;direction=west;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="270" width="120" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="Spark SQL" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rotation=0;horizontal=1;verticalAlign=middle;textDirection=rtl;direction=west;" vertex="1" parent="1">
+                    <mxGeometry x="395" y="270" width="120" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="parquet.py" style="endArrow=classic;startArrow=classic;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="20" target="30">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="380" as="sourcePoint"/>
+                        <mxPoint x="450" y="330" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="36" value="stats_ml.py&lt;br&gt;text_classification.ipynb" style="endArrow=classic;startArrow=classic;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="23" target="20">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="380" as="sourcePoint"/>
+                        <mxPoint x="450" y="330" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
